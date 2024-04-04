@@ -55,6 +55,13 @@ pandas
 pip install pandas
 ```
 ### (Note: If you facing issues when downloading the weight of learned optimizers automatically from Google Cloud, here are the instructions)
-1. We provide the default weight and tuned weight in '../INIF/Learned_optimizer_weight'
-2. 
+1. We provide the default weight and continue trained weight in '../INIF/Learned_optimizer_weight'
+2. go to '../anaconda3/envs/INIF/lib/pythonX.XX/site-packages/learned_optimization/research/general_lopt/pretrained_optimizers.py'
+
+   (tips: ctrl+click on 'from learned_optimization.research.general_lopt import pretrained_optimizers' to jump to the file)
+
+3. replace the path in line143 to '../INIF/Learned_optimizer_weight
+```bash
+ _pretrain_no_config_root = 'gs://gresearch/learned_optimization/pretrained_lopts/no_config/'
+```
 ## Demonstration
