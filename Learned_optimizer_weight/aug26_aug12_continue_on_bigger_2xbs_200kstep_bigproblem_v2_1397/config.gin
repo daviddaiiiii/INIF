@@ -1,0 +1,73 @@
+# Parameters for Adam:
+# ==============================================================================
+Adam.learning_rate = 0.0003
+
+# Parameters for build_gradient_estimators:
+# ==============================================================================
+build_gradient_estimators.gradient_estimator_fn = @FullESOrPMAP
+build_gradient_estimators.sample_task_family_fn = @april28_distribution_bigger
+
+# Parameters for FullES:
+# ==============================================================================
+FullES.loss_type = 'last_recompute'
+FullES.recompute_samples = 100
+FullES.sign_delta_loss_scalar = 1.0
+FullES.truncation_schedule = @LogUniformLengthSchedule()
+
+# Parameters for gradient_worker_compute:
+# ==============================================================================
+gradient_worker_compute.extra_metrics = False
+
+# Parameters for GradientAccumulator:
+# ==============================================================================
+GradientAccumulator.num_average = 20
+GradientAccumulator.opt = @Adam()
+
+# Parameters for GradientClipOptimizer:
+# ==============================================================================
+GradientClipOptimizer.opt = @GradientAccumulator()
+
+# Parameters for GradientLearner:
+# ==============================================================================
+GradientLearner.init_theta_from_path = \
+    'jul18_continue_on_bigger_2xbs_morestale_9264/params'
+GradientLearner.meta_init = @HyperV2()
+GradientLearner.reset_outer_iteration = True
+GradientLearner.theta_opt = @GradientClipOptimizer()
+
+# Parameters for HyperV2:
+# ==============================================================================
+HyperV2.lstm_hidden_size = 512
+HyperV2.param_inits = 256
+HyperV2.use_bugged_loss_features = False
+
+# Parameters for LogUniformLengthSchedule:
+# ==============================================================================
+LogUniformLengthSchedule.max_length = 200000
+LogUniformLengthSchedule.min_length = 200
+
+# Parameters for periodically_save_checkpoint:
+# ==============================================================================
+periodically_save_checkpoint.time_interval = 60
+
+# Parameters for PMAPFullES:
+# ==============================================================================
+PMAPFullES.truncation_schedule = @LogUniformLengthSchedule()
+
+# Parameters for run_train:
+# ==============================================================================
+run_train.lopt = @HyperV2()
+run_train.num_estimators = 8
+run_train.num_steps = 100000
+run_train.outer_learner_fn = @GradientLearner
+run_train.run_num_estimators_per_gradient = 1
+run_train.staleness = 500
+run_train.stochastic_resample_frequency = 200
+run_train.summary_every_n = 25
+run_train.trainer_batch_size = 512
+
+# Parameters for VectorizedLOptTruncatedStep:
+# ==============================================================================
+VectorizedLOptTruncatedStep.num_tasks = 8
+VectorizedLOptTruncatedStep.random_initial_iteration_offset = 0
+VectorizedLOptTruncatedStep.trunc_sched = @NeverEndingTruncationSchedule()
