@@ -2,11 +2,11 @@
 Code for 'Implicit Neural Image Field for Biological Microscopy Image Compression' 
 
 ## Installation
-First clone the repository by
+First clone the repository by 
 ```bash
 git clone https://github.com/daviddaiiiii/INIF.git
 ```
-Create the conda environment
+Create the conda environment and activate
 ```bash
 conda deactivate
 conda create -n INIF python=3.10
