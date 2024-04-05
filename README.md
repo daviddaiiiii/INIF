@@ -6,6 +6,12 @@ First clone the repository by
 ```bash
 git clone https://github.com/daviddaiiiii/INIF.git
 ```
+Create the conda environment
+```bash
+conda deactivate
+conda create -n INIF python=3.10
+conda activate INIF
+```
 You can use the setup.sh file to install automatically in linux. 
 ```bash
 chmod +x setup.sh
