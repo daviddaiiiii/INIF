@@ -2,6 +2,10 @@
 Code for 'Implicit Neural Image Field for Biological Microscopy Image Compression' 
 
 ## Installation
+First clone the repository by
+```bash
+git clone https://github.com/daviddaiiiii/INIF.git
+```
 You can use the setup.sh file to install automatically in linux. 
 ```bash
 chmod +x setup.sh
