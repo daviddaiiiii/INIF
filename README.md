@@ -76,4 +76,4 @@ pip install pandas
 ```
 ## Demonstration
 ### General compression using INIF, SIREN, and HEVC
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/daviddaiiiii/INIF/blob/main/playground/General_compression.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/daviddaiiiii/INIF/blob/main/compression_tutorial.ipynb)
