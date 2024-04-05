@@ -75,3 +75,5 @@ pip install pandas
  _pretrain_no_config_root = 'gs://gresearch/learned_optimization/pretrained_lopts/no_config/'
 ```
 ## Demonstration
+### General compression using INIF, SIREN, and HEVC
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/daviddaiiiii/INIF/blob/main/playground/General_compression.ipynb)
