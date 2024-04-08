@@ -21,24 +21,23 @@ These codes would
 1. Give the script execution permissions.
 2. Execute follow commands
 ### (Note: You can execute manually if you have a environment which already contains most of the dependencies)
-### Conda Environment
-```bash
-conda create -n INIF python=3.10
-conda activate INIF
-```
 ### Frameworks
 JAX (Nvidia-GPU version)
 ```bash
 pip install -U "jax[cuda12_pip]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 ```
-### PIP
-learned optimizer (lopt)
+Tensorflow (Nvidia-GPU version)
 ```bash
- pip install git+https://github.com/google/learned_optimization.git
+pip install tensorflow==2.8.4
 ```
+### PIP
 dm-haiku
 ```bash
 pip install git+https://github.com/deepmind/dm-haiku
+```
+learned optimizer (lopt)
+```bash
+ pip install git+https://github.com/google/learned_optimization.git
 ```
 optax
 ```bash

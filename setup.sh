@@ -3,11 +3,14 @@
 # Install JAX with CUDA support
 pip install -U "jax[cuda12_pip]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 
-# Install the learned optimization package from GitHub
-pip install git+https://github.com/google/learned_optimization.git
+# Install Tensorflow with CUDA support
+pip install tensorflow==2.8.4
 
 # Install dm-haiku from GitHub
 pip install git+https://github.com/deepmind/dm-haiku
+
+# Install the learned optimization package from GitHub
+pip install git+https://github.com/google/learned_optimization.git
 
 # Install other dependencies
 pip install optax
