@@ -8,10 +8,6 @@ pip install git+https://github.com/google/learned_optimization.git
 
 # # Install Jax
 pip install -U "jax[cuda11_pip]==0.4.23" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
-<<<<<<< HEAD
-
-=======
->>>>>>> dbe73ae225dfbe24a63aa18769235a589b906b04
 
 # Install haiku
 pip install dm-haiku==0.0.5
