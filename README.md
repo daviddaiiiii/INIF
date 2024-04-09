@@ -24,7 +24,7 @@ These codes would
 ### Frameworks
 JAX (Nvidia-GPU version)
 ```bash
-pip install -U "jax[cuda12_pip]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+pip install -U "jax==0.4.26[cuda12_pip]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 ```
 Tensorflow (Nvidia-GPU version)
 ```bash
