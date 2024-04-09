@@ -7,7 +7,7 @@ pip install tensorflow==2.8.4
 pip install git+https://github.com/google/learned_optimization.git
 
 # # Install Jax
-pip install -U "jax==0.4.23[cuda11_pip]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+pip install -U "jax[cuda11_pip]==0.4.23" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 
 
 
