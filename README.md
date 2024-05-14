@@ -56,7 +56,7 @@ This repo is the offical codebase for the manuscript 'Implicit Neural Image Fiel
          1. Give the script execution permissions
          2. Install the [dependencies](#dependencies) via `pip`
 
-> [!NOTE] 
+> [!TIP] 
 > In case of issues when downloading the weight of learned optimizers automatically from Google Cloud, below are some workaround:
 <details>
 <summary>Some workaround:</summary>
@@ -64,7 +64,7 @@ This repo is the offical codebase for the manuscript 'Implicit Neural Image Fiel
    1. We provide the default weight and continue trained weight in '../INIF/Learned_optimizer_weight'
    2. go to '../anaconda3/envs/INIF/lib/pythonX.XX/site-packages/learned_optimization/research/general_lopt/pretrained_optimizers.py'
 
-      > [!TIP] 
+      > :bulb: 
       > `ctrl`+`click` on 'from learned_optimization.research.general_lopt import pretrained_optimizers' to jump to the file
 
    3. replace the path in line143 to '../INIF/Learned_optimizer_weight
@@ -77,8 +77,8 @@ This repo is the offical codebase for the manuscript 'Implicit Neural Image Fiel
 ### Docker:
 
 1. Install docker if you don't have it: [get-docker](https://docs.docker.com/get-docker/)
-   > [!IMPORTANT]  
-   > To utilize GPU, [nvidia-docker](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installing-with-apt) package is also required.
+> [!IMPORTANT]  
+> To utilize GPU, [nvidia-docker](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installing-with-apt) package is also required.
 
 
 2. retrieve the docker image from the dockerhub:
