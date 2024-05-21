@@ -83,11 +83,11 @@ This repo is the offical codebase for the manuscript 'Implicit Neural Image Fiel
 
 2. retrieve the docker image from the dockerhub:
    ```bash
-   docker pull foo/bar
+   docker pull pkuhmi/inif_env:latest
    ```
 3. start a container:
    ```bash
-   docker run --gpus all -it --rm --shm-size 16G --ulimit memlock=-1 -v ./INIF:/INIF/ --name inif inif
+   docker run --gpus all -it --rm --shm-size 16G --ulimit memlock=-1 -v ./INIF:/INIF/ --name inif pkuhmi/inif_env:latest
    ```
 
    <details>
@@ -104,5 +104,10 @@ This repo is the offical codebase for the manuscript 'Implicit Neural Image Fiel
    
    </details>
 
+> [!TIP] 
+> We recommend to use the VSCode Docker [extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) to attach the container to the VSCode workspace and run the tutorial.
+
 ## Quick Start :rocket:
-We provide a **google colab notework** that demonstrates how to use INIF for the general image compression: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/daviddaiiiii/INIF/blob/main/compression_tutorial.ipynb)
+We provide a **google colab notebook** that demonstrates how to use INIF for the general image compression: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/daviddaiiiii/INIF/blob/main/compression_tutorial.ipynb)
+
+You can also try it out locally by following the [tutorial](./compression_tutorial.ipynb).
