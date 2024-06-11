@@ -1,15 +1,15 @@
 # INIF
-This repo is the official codebase for the manuscript 'Implicit Neural Image Field for Biological Microscopy Image Compression'.
+This repo is the offical codebase for the manuscript 'Implicit Neural Image Field for Biological Microscopy Image Compression'.
 
 ## Introduction
-**Implicit neural image field (INIF)** is a SOTA paradigm for microscopy image compression, characterized by its effectiveness and flexibility. It adopts a learned optimizer and leverages common codecs for faster compression while integrating application-specific guidance for improved compression quality and trustworthiness.
+**Implicit neural image field (INIF)** is a SOTA paradigm for microscopy image compression, characterized by its effectiveness and flexibility. It adopts a learned optimizer and leverages common codecs for faster compression, while integrating application-specific guidance for improved compression quality and trustworthiness.
 ![main-figure](INIF-main.png)
 ## System Requirements
 
 ### Operating System
 > [!NOTE] 
 > Currently only **Linux System** is supported.
-> The test environment is Ubuntu 20.04, RTX3090 GPU, and CUDA 11.8. For local installation, please make sure the CUDA version is compatible with the jax and tensorflow version. Otherwise we strongly suggest to tryout the tutorial in [General compression tutorial](./compression_tutorial.ipynb)
+> The test enviornment is Ubuntu 20.04, RTX3090 GPU, and CUDA 11.8. For local installation, please make sure the CUDA version is compatible with the jax and tensorflow version. Otherwise we strongly suggest to tryout the tutorial in [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/daviddaiiiii/INIF/blob/main/compression_tutorial.ipynb)
 ### Dependencies
 
 <details>
@@ -109,7 +109,10 @@ This repo is the official codebase for the manuscript 'Implicit Neural Image Fie
 > We recommend to use the VSCode Docker [extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) to attach the container to the VSCode workspace and run the tutorial.
 
 ## Quick Start :rocket:
-We provide a **Google colab notebook** that demonstrates how to use INIF for general image compression: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/daviddaiiiii/INIF/blob/main/compression_tutorial.ipynb)
+We provide a **google colab notebook** that demonstrates how to use INIF for the general image compression: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/daviddaiiiii/INIF/blob/main/compression_tutorial.ipynb)
 
-You can also try it out locally by following the [tutorial](./compression_tutorial.ipynb).
+You can also try it out locally by playing around with the [compression](./compression_tutorial.ipynb) & [decompression](./playground/decode.ipynb).
+
+> [!NOTE]
+> The typical runtime for traning depends on the raw data and device used. In the tutorial, it would take approximately 10 minutes to train the model on a Google Colab's free GPU.
 
