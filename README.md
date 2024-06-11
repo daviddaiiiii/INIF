@@ -8,7 +8,7 @@ This repo is the offical codebase for the manuscript 'Implicit Neural Image Fiel
 ### Operating System
 > [!NOTE] 
 > Currently only **Linux System** is supported.
-
+> The test enviornment is Ubuntu 20.04, RTX3090 GPU, and CUDA 11.8. For local installation, please make sure the CUDA version is compatible with the jax and tensorflow version. Otherwise we strongly suggest to tryout the tutorial in [General compression tutorial](./compression_tutorial.ipynb)
 ### Dependencies
 
 <details>
@@ -22,20 +22,19 @@ This repo is the offical codebase for the manuscript 'Implicit Neural Image Fiel
 <details>
 <summary>pip</summary>
 
-- dm-haiku
-- learned optimizer (lopt)
-- optax
-- ipywidgets
-- tifffile
-- opencv-python
-- matplotlib
-- pandas
-- learned-optimization
+- dm-haiku==0.0.13.dev0 (Nvidia-GPU version)
+- optax==0.2.2 
+- ipywidgets==8.1.2
+- tifffile==2024.2.12
+- opencv-python==4.9.0.80
+- matplotlib==3.8.4
+- pandas==2.2.1
+- learned-optimization==0.0.1 (lopt)
 
 </details>
 
 ## Installation
-
+> [!NOTE] The typical install time is under 10 minutes. (Test it on Google Colab's free GPU)
 ### From source:
    1. clone this repository:
       ```bash
