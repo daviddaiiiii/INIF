@@ -34,7 +34,8 @@ This repo is the offical codebase for the manuscript 'Implicit Neural Image Fiel
 </details>
 
 ## Installation
-> [!NOTE] The typical install time is under 10 minutes. (Test it on Google Colab's free GPU)
+> [!NOTE] 
+> The typical install time is under 10 minutes. (Test it on Google Colab's free GPU)
 ### From source:
    1. clone this repository:
       ```bash
